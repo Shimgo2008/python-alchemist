@@ -1,7 +1,6 @@
-from math import isclose, floor, log10
-from typing import Self
-
 from functools import total_ordering
+from math import floor, isclose, log10
+from typing import Self
 
 
 @total_ordering
@@ -133,9 +132,3 @@ class SciFloat:
 
     def __int__(self) -> int:
         return int(self.__float__())
-
-
-a = SciFloat(1.2, 3)
-b = SciFloat(1.2, 3)
-
-print(a * b)

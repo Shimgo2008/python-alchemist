@@ -1,8 +1,8 @@
-from enum import Enum
 from dataclasses import dataclass
+from enum import Enum
 
 from SciFloat import SciFloat
-from Units import eV, eUnit
+from Units import eUnit, eV
 
 
 @dataclass(frozen=True)
